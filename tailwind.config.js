@@ -4,6 +4,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    maxWidth: {
+        '32': '8rem',
+        '96': '96rem',
+      }
   },
   plugins: [],
 }

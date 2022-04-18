@@ -1,9 +1,13 @@
-import React, { useContext, useEffect } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import PhotosComp from './photos/photos';
 
 function PagesComp() {
 
     return (
-        <h1>YEY</h1>
+        <Routes>
+            <Route path='/photos/*' element={<PhotosComp />} />
+            <Route path="*" element={<Navigate to="/photos" />} />
+        </Routes>
     );
 }
 
