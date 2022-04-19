@@ -41,7 +41,7 @@ function PhotosComp() {
         <div>
             Search: <input type="text" className="border border-2" onChange={(e) => {setSearch(e.target.value)}} />
         </div>
-        <div className="flex flex-wrap">{photo_comps}</div>
+        <div className="flex flex-wrap content-center">{photo_comps}</div>
         </>
     );
 }
